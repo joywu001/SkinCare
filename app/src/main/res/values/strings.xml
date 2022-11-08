@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="edit_message">Enter your name</string>
+    <string name="button_send">Start</string>
+    <string name="SkinDiscuss">膚況檢測</string>
+    <string name="SkinNeeds">肌膚需求</string>
+    <string name="S_function">功能分類</string>
+    <string name="S_brand">品牌分類</string>
+    <string name="S_price">價格分類</string>
+    <string name="S_process">tips 正確保養程序</string>
+    <string name="S_recommendation">產品推薦</string>
+</resources>
