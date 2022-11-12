@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".DisplayMessageActivity">
 
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="135dp"
@@ -16,7 +15,8 @@
         android:layout_marginEnd="32dp"
         android:src="@drawable/mylogo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
 
     <ImageView
         android:id="@+id/discuss"
@@ -116,6 +116,17 @@
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="prodPrice"/>
+
+    <ImageView
+        android:id="@+id/func"
+        android:layout_width="77dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/func_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
 
     <Button
         android:id="@+id/button5"
