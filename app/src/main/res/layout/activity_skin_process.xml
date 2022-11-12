@@ -6,4 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".Skin_Process">
 
+    <ImageView
+        android:id="@+id/processTitle"
+        android:layout_width="405dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/s_process"
+        app:layout_constraintBottom_toTopOf="@+id/remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="77dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/xiezhuang"
+        app:layout_constraintBottom_toTopOf="@+id/wash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processTitle">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/wash"
+        android:layout_width="77dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="262dp"
+        android:src="@drawable/xilianlian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remove">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/moisture"
+        android:layout_width="72dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/huazhuangshui"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="378dp">
+    </ImageView>
+    
+
 </androidx.constraintlayout.widget.ConstraintLayout>

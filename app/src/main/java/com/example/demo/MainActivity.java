@@ -23,27 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv_show=(TextView) findViewById(R.id.tv_show);
-        //editTitle = (EditText) findViewById(R.id.editTitle);
-        textOutput=(TextView) findViewById(R.id.textOutput);
-
-        btn_show=(Button)  findViewById(R.id.btn_show);
-        btn_show.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tv_show.setText("按鈕測試");
-                tv_show.setTextSize(50);
-            }
-        });
-
-        btnOutput=(Button) findViewById(R.id.btnOutput);
-        btnOutput.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                textOutput.setText(editTitle.getText().toString());
-            }
-        });
-    }
+        }
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.editTextTextPersonName);
