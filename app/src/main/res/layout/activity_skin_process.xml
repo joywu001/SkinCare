@@ -11,134 +11,122 @@
         android:layout_width="407dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="24dp"
         android:src="@drawable/processtitle"
-        app:layout_constraintBottom_toTopOf="@+id/wash"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
 
     <ImageView
         android:id="@+id/remove"
-        android:layout_width="99dp"
-        android:layout_height="119dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="298dp"
+        android:layout_width="108dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
         android:src="@drawable/xiezhuang"
-        app:layout_constraintBottom_toTopOf="@+id/cream"
-        app:layout_constraintEnd_toStartOf="@+id/cleanInfo"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/Ptitle"></ImageView>
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="190dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginBottom="282dp"
+        android:layout_width="182dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="485dp"
         android:src="@drawable/remove_info"
-        app:layout_constraintBottom_toTopOf="@+id/creamInfo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.303"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wash"
+        app:layout_constraintStart_toEndOf="@+id/remove"
+        app:layout_constraintTop_toBottomOf="@+id/Ptitle" />
 
     <ImageView
         android:id="@+id/wash"
-        android:layout_width="77dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="55dp"
+        android:layout_width="89dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/xilianlian"
-        app:layout_constraintBottom_toTopOf="@+id/essence"
-        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ptitle"></ImageView>
 
     <ImageView
         android:id="@+id/cleanInfo"
-        android:layout_width="177dp"
-        android:layout_height="103dp"
-        android:layout_marginTop="226dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="227dp"
+        android:layout_width="141dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/clean_info"
-        app:layout_constraintBottom_toBottomOf="@+id/essence"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Ptitle"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toTopOf="@+id/moistInfo"
+        app:layout_constraintEnd_toStartOf="@+id/wash"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/moisture" />
 
     <ImageView
         android:id="@+id/moisture"
-        android:layout_width="72dp"
-        android:layout_height="0dp"
+        android:layout_width="70dp"
+        android:layout_height="128dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginTop="96dp"
         android:src="@drawable/huazhuangshui"
-        app:layout_constraintBottom_toTopOf="@+id/creamInfo"
-        app:layout_constraintStart_toStartOf="parent"></ImageView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remove"></ImageView>
 
     <ImageView
         android:id="@+id/moistInfo"
         android:layout_width="177dp"
         android:layout_height="98dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/moisture_info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.286"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595"></ImageView>
+        app:layout_constraintBottom_toTopOf="@+id/essenceInfo"
+        app:layout_constraintEnd_toStartOf="@+id/wash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/moisture"></ImageView>
 
     <ImageView
         android:id="@+id/essence"
-        android:layout_width="103dp"
-        android:layout_height="139dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginBottom="83dp"
+        android:layout_width="73dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/essence"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/moistInfo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/wash" />
 
     <ImageView
         android:id="@+id/essenceInfo"
-        android:layout_width="174dp"
-        android:layout_height="97dp"
+        android:layout_width="173dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/essence_info"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779"></ImageView>
+        app:layout_constraintBottom_toTopOf="@+id/creamInfo"
+        app:layout_constraintEnd_toStartOf="@+id/essence"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/cream"></ImageView>
 
     <ImageView
         android:id="@+id/cream"
-        android:layout_width="90dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="17dp"
+        android:layout_width="96dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
         android:src="@drawable/cream"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remove"></ImageView>
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
 
     <ImageView
         android:id="@+id/creamInfo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="177dp"
+        android:layout_height="98dp"
+        android:layout_marginBottom="46dp"
         android:src="@drawable/cream_info"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/essence"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"></ImageView>
+        app:layout_constraintStart_toEndOf="@+id/cream"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
