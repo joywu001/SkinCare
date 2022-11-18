@@ -11,11 +11,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv_show;
-    private EditText editTitle;
-    private TextView textOutput;
-    private Button button,btn_show;
-    private Button btnOutput;
     public static final String EXTRA_MESSAGE = "com.example.demo.MESSAGE";
 
     @Override

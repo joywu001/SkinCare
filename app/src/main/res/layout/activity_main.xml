@@ -19,7 +19,8 @@
         android:text="給你膚膚"
         android:textAlignment="center"
         android:textColor="#373535"
-        android:textSize="30sp"></TextView>
+        android:textSize="30sp">
+    </TextView>
 
     <EditText
         android:id="@+id/editTextTextPersonName"
