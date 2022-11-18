@@ -11,17 +11,17 @@
         android:id="@+id/q1pic"
         android:layout_width="273dp"
         android:layout_height="209dp"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="115dp"
         android:src="@drawable/discuss1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </ImageView>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:hint="@string/SkinDiscuss_q1"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/button7"
         android:layout_width="135dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/SkinDiscuss_a11"
         android:onClick="skin_discuss_q2"
         android:textSize="16sp"

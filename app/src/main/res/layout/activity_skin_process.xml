@@ -8,14 +8,14 @@
 
     <ImageView
         android:id="@+id/Ptitle"
-        android:layout_width="407dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="380dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="64dp"
         android:src="@drawable/processtitle"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
 
@@ -24,7 +24,6 @@
         android:layout_width="108dp"
         android:layout_height="129dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="1dp"
         android:src="@drawable/xiezhuang"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Ptitle"></ImageView>
@@ -57,19 +56,21 @@
         android:layout_width="141dp"
         android:layout_height="86dp"
         android:layout_marginStart="77dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/clean_info"
         app:layout_constraintBottom_toTopOf="@+id/moistInfo"
         app:layout_constraintEnd_toStartOf="@+id/wash"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/moisture" />
+        app:layout_constraintStart_toEndOf="@+id/moisture"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/moisture"
         android:layout_width="70dp"
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="85dp"
         android:src="@drawable/huazhuangshui"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/remove"></ImageView>
@@ -85,7 +86,8 @@
         app:layout_constraintBottom_toTopOf="@+id/essenceInfo"
         app:layout_constraintEnd_toStartOf="@+id/wash"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/moisture"></ImageView>
+        app:layout_constraintStart_toEndOf="@+id/moisture"
+        app:layout_constraintTop_toBottomOf="@+id/cleanInfo"></ImageView>
 
     <ImageView
         android:id="@+id/essence"
@@ -124,7 +126,7 @@
         android:id="@+id/creamInfo"
         android:layout_width="177dp"
         android:layout_height="98dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/cream_info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cream"></ImageView>
