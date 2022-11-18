@@ -38,6 +38,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:hint="@string/SkinDiscuss_a31"
+        android:onClick="skin_discuss_q4"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -50,6 +51,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="22dp"
         android:hint="@string/SkinDiscuss_a32"
+        android:onClick="skin_discuss_q4"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +63,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="22dp"
         android:hint="@string/SkinDiscuss_a33"
+        android:onClick="skin_discuss_q4"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,20 +75,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
         android:hint="@string/SkinDiscuss_a34"
+        android:onClick="skin_discuss_q4"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button18" />
 
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:hint="@string/SkinDiscuss_a35"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

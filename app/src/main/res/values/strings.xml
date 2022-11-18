@@ -35,4 +35,15 @@
     <string name="SkinDiscuss_a43">經常會有嚴重粉刺、痘痘的困擾</string>
     <string name="SkinDiscuss_a44">沒有以上問題</string>
 
+    <string name="DiscussFinal_Oil">油性肌膚</string>
+    <string name="Oil_info">肌膚表面油膩，皮脂腺機能分泌過於旺盛。</string>
+    <string name="DiscussFinal_Mix">混和性肌膚</string>
+    <string name="Mid_info">油脂與汗水分泌正常、肌膚嬌嫩、細膩有彈性。</string>
+    <string name="DiscussFinal_Mid">中性肌膚</string>
+    <string name="Mix_info">肌膚表面同時存在容易出油又容易乾燥的部位。</string>
+    <string name="DiscussFinal_Dry">乾性肌膚</string>
+    <string name="Dry_info">肌膚表面油脂、水分分泌不足、乾燥失去柔軟性。</string>
+
+    <string name="SkinFeature">皮膚特徵</string>
+    <string name="ProdRecommend">查看適合我的商品</string>
 </resources>
