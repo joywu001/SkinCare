@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Demo</string>
+    <string name="app_name">給你膚膚</string>
     <string name="edit_message">Enter your name</string>
     <string name="button_send">Start</string>
     <string name="SkinDiscuss">膚況檢測</string>
@@ -46,4 +46,7 @@
 
     <string name="SkinFeature">皮膚特徵</string>
     <string name="ProdRecommend">查看適合我的商品</string>
+    
+    <string name="nav_drawer_open">開起選單</string>
+    <string name="nav_drawer_close">關閉選單</string>
 </resources>
