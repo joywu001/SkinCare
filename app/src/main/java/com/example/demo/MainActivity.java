@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.skincare.R;
+import com.example.demo.R;
 
 public class MainActivity extends AppCompatActivity {
 

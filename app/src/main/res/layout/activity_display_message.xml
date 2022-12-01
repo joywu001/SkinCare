@@ -57,13 +57,13 @@
         android:id="@+id/button3"
         android:layout_width="128dp"
         android:layout_height="60dp"
+        android:layout_marginStart="53dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="143dp"
         android:hint="@string/SkinNeeds"
         android:onClick="skinNeeds"
         android:textColorHint="#514F4F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/needs"
         app:layout_constraintTop_toBottomOf="@+id/discuss" />
 
     <ImageView
@@ -80,13 +80,13 @@
         android:id="@+id/button2"
         android:layout_width="128dp"
         android:layout_height="60dp"
+        android:layout_marginStart="38dp"
         android:layout_marginTop="168dp"
-        android:layout_marginEnd="143dp"
         android:hint="@string/SkinDiscuss"
         android:onClick="skinDiscuss"
         android:textColorHint="#514F4F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/discuss"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -113,14 +113,14 @@
         android:id="@+id/button4"
         android:layout_width="128dp"
         android:layout_height="60dp"
-        android:layout_marginEnd="143dp"
+        android:layout_marginStart="38dp"
         android:layout_marginBottom="40dp"
         android:hint="@string/S_price"
         android:onClick="prodPrice"
         android:textColorHint="#514F4F"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/price" />
 
     <ImageView
         android:id="@+id/func"
@@ -136,13 +136,13 @@
         android:id="@+id/button5"
         android:layout_width="128dp"
         android:layout_height="60dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="143dp"
         android:hint="@string/S_function"
         android:onClick="prodFunc"
         android:textColorHint="#514F4F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/func"
         app:layout_constraintTop_toBottomOf="@+id/price" />
 
     <ImageView
@@ -161,13 +161,13 @@
         android:id="@+id/button6"
         android:layout_width="128dp"
         android:layout_height="60dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="143dp"
         android:hint="@string/S_brand"
         android:onClick="prodBrand"
         android:textColorHint="#514F4F"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brands"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button

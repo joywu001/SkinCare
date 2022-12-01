@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.skincare.R;
+import com.example.demo.R;
 
 public class Skin_Discuss extends AppCompatActivity {
 
