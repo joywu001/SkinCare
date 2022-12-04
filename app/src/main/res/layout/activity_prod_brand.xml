@@ -7,17 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".Prod_Brand"
-    tools:openDrawer="start">
+    tools:context=".Prod_Brand">
 
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/header_brand"
-        app:menu="@menu/brand_menu" />
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header_brand"
+            app:menu="@menu/brand_menu" >
+
+        </com.google.android.material.navigation.NavigationView>
 
 
     <LinearLayout
@@ -32,7 +33,7 @@
             android:background="@color/breidge_1"
             android:elevation="4dp" />
 
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scrollbarStyle="insideOverlay"

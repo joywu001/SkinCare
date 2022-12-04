@@ -33,6 +33,8 @@ public class Prod_Brand extends AppCompatActivity implements NavigationView.OnNa
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbar);
 
+        navigationView.setItemIconTintList(null);
+
         setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_drawer_open, R.string.nav_drawer_close);
