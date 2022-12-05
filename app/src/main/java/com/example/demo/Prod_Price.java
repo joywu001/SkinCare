@@ -38,13 +38,17 @@ public class Prod_Price extends AppCompatActivity implements NavigationView.OnNa
         toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+        navigationView.setNavigationItemSelectedListener(this);
 
         navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_drawer_open, R.string.nav_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(this);
+        if(savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_p, new Cheap_product()).commit();
+            navigationView.setCheckedItem(R.id.cheap);
+        }
     }
 
     @Override
@@ -59,6 +63,18 @@ public class Prod_Price extends AppCompatActivity implements NavigationView.OnNa
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.cheap:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_p,new Cheap_product()).commit();
+                break;
+            case R.id.expensive:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_p,new Expensive_product()).commit();
+                break;
+            case R.id.doctor:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_p,new Doctor_product()).commit();
+                break;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }

@@ -34,12 +34,17 @@ public class Prod_Func extends AppCompatActivity implements NavigationView.OnNav
         toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+        navigationView.setNavigationItemSelectedListener(this);
 
+        navigationView.bringToFront();
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_drawer_open, R.string.nav_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setNavigationItemSelectedListener(this);
+        if(savedInstanceState == null){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new toner_function()).commit();
+            navigationView.setCheckedItem(R.id.toner);
+        }
     }
 
     @Override
@@ -54,6 +59,27 @@ public class Prod_Func extends AppCompatActivity implements NavigationView.OnNav
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.toner:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new toner_function()).commit();
+                break;
+            case R.id.essence:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new essence_function()).commit();
+                break;
+            case R.id.lotion:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new lotion_function()).commit();
+                break;
+            case R.id.cream:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new cream_function()).commit();
+                break;
+            case R.id.eyeCream:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new eyeCream_function()).commit();
+                break;
+            case R.id.mask:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container_f,new mask_function()).commit();
+                break;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }

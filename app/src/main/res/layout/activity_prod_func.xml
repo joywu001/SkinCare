@@ -9,14 +9,13 @@
     tools:context=".Prod_Func"
     tools:openDrawer="start">
 
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header_func"
-        app:menu="@menu/func_menu"/>
+        app:menu="@menu/func_menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,17 +29,10 @@
             android:background="@color/breidge_1"
             android:elevation="4dp" />
 
-        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        <FrameLayout
+            android:id="@+id/fragment_container_f"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbarStyle="insideOverlay"
-            android:scrollbars="vertical">
+            android:layout_height="match_parent" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="a\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\n"
-                android:textSize="30sp" />
-        </ScrollView>
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
