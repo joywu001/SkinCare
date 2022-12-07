@@ -40,7 +40,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void prodBrand(View view) {
-        Intent intent = new Intent(this, Prod_Brand.class);
+        Intent intent = new Intent(this, prod_brand1.class);
         startActivity(intent);
     }
     public void skinProcess(View view) {

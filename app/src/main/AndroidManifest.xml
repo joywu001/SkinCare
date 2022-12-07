@@ -24,14 +24,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".prod_brand2"
-            android:exported="false"
-            android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".discuss_final_dry"
             android:exported="false"
             android:screenOrientation="portrait">

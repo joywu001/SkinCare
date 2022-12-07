@@ -49,4 +49,79 @@
 
     <string name="nav_drawer_open">開起選單</string>
     <string name="nav_drawer_close">關閉選單</string>
+
+    <string name="molecule_name">Brand</string>
+
+    <string-array name="brand">
+        <item>A-Derma 艾芙美</item>
+        <item>Aesop</item>
+        <item>AHC</item>
+        <item>Apivita</item>
+        <item>Aveda</item>
+        <item>Aveeno</item>
+        <item>Avene 雅漾</item>
+        <item>Bioderma 貝膚黛瑪</item>
+        <item>Bioneo 德國百妮</item>
+        <item>Biotherm 碧兒泉</item>
+        <item>Bobbi Brown</item>
+        <item>CeraVe</item>
+        <item>Cetaphil 舒特膚</item>
+        <item>Clairs 克蘭詩</item>
+        <item>Clinique 倩碧</item>
+
+        <item>Darphin</item>
+        <item>DermEden 得美登</item>
+        <item>DF 美肌醫生</item>
+        <item>Diptyque</item>
+        <item>D program 敏感話題</item>
+        <item>Dr.Cink 達特聖克</item>
+        <item>Dr.Douxi 朵璽</item>
+        <item>Dr.Hsieh 達特醫</item>
+        <item>Dr.Huang 黃禎憲</item>
+        <item>Dr.May 美博士</item>
+        <item>Dr.Wu 達爾膚</item>
+        <item>Elemis</item>
+        <item>Elxir</item>
+        <item>Elizabeth Arden 伊莉莎白</item>
+        <item>Estee Lauter 雅詩蘭黛</item>
+        <item>First Aid Beauty</item>
+        <item>For Beloved One 寵愛之名</item>
+        <item>Helena Rubinstein</item>
+        <item>Ipsa</item>
+        <item>Jo Malone</item>
+        <item>Kafen</item>
+        <item>Kanebo 佳麗寶</item>
+        <item>Kerastase 巴黎卡詩</item>
+        <item>Kiehls 契爾氏</item>
+        <item>Klorane</item>
+        <item>Kose</item>
+        <item>L Occitane 歐舒丹</item>
+        <item>La Mer 海洋拉娜</item>
+        <item>La Roche-Posay 理膚寶水</item>
+        <item>Lancome 蘭蔻</item>
+        <item>Laneige 蘭芝</item>
+        <item>Muji 無印良品</item>
+        <item>Neogence 霓淨思</item>
+        <item>Neutroguna 露得清</item>
+        <item>Olay</item>
+        <item>O right 歐萊德</item>
+        <item>Origins 品木宣言</item>
+        <item>Paulas Choice 寶拉珍選</item>
+        <item>Revital 莉薇特麗</item>
+        <item>Revive</item>
+        <item>Sebamed 施巴</item>
+        <item>Shiseido 資生堂</item>
+        <item>Shu uemera 植村秀</item>
+        <item>Sisley 希思黎</item>
+        <item>SK-II</item>
+        <item>Sulwhasoo 雪花秀</item>
+        <item>Swissvita 薇佳</item>
+        <item>TTM 提提妍</item>
+        <item>Tunemakers</item>
+        <item>Vitchy 薇姿</item>
+        <item>Whoo 后</item>
+        <item>YSL</item>
+        <item>台塑生醫</item>
+
+    </string-array>
 </resources>

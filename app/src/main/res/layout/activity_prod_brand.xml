@@ -1,50 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".Prod_Brand">
 
-
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/nav_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            app:headerLayout="@layout/header_brand"
-            app:menu="@menu/brand_menu" >
-
-        </com.google.android.material.navigation.NavigationView>
-
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/breidge_1"
-            android:elevation="4dp" />
+            android:layout_height="750dp">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbarStyle="insideOverlay"
-            android:scrollbars="vertical">
+            <ImageButton
+                android:id="@+id/Aesop"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_aesop"
+                app:layout_constraintBottom_toTopOf="@+id/Aveda"
+                app:layout_constraintEnd_toStartOf="@+id/Apivita"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="a\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\na\n"
-                android:textSize="30sp" />
-        </ScrollView>
+            <ImageButton
+                android:id="@+id/Apivita"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_apivita"
+                app:layout_constraintBottom_toTopOf="@+id/Aveeno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Aesop"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/Aveda"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/breidge_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_aveda"
+                app:layout_constraintEnd_toStartOf="@+id/Aveeno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Aesop" />
+
+            <ImageButton
+                android:id="@+id/Aveeno"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_aveeno"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Aveda"
+                app:layout_constraintTop_toBottomOf="@+id/Apivita" />
+
+            <ImageButton
+                android:id="@+id/Avene"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/breidge_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_avene"
+                app:layout_constraintEnd_toStartOf="@+id/Biotherm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Aveda" />
+
+            <ImageButton
+                android:id="@+id/Biotherm"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_biotherm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Avene"
+                app:layout_constraintTop_toBottomOf="@+id/Aveeno" />
+
+            <ImageButton
+                android:id="@+id/Clinique"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_clinique"
+                app:layout_constraintEnd_toStartOf="@+id/Clarins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Avene" />
+
+            <ImageButton
+                android:id="@+id/Clarins"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_clarins"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Clinique"
+                app:layout_constraintTop_toBottomOf="@+id/Biotherm" />
+
+            <ImageButton
+                android:id="@+id/Elemis"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_elemis"
+                app:layout_constraintEnd_toStartOf="@+id/ElizabethArden"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Clinique" />
+
+            <ImageButton
+                android:id="@+id/ElizabethArden"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_elizabetharden"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Elemis"
+                app:layout_constraintTop_toBottomOf="@+id/Clarins" />
+
+            <ImageButton
+                android:id="@+id/kanebo"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_kanebo"
+                app:layout_constraintEnd_toStartOf="@+id/JoMalone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Elemis" />
+
+            <ImageButton
+                android:id="@+id/JoMalone"
+                android:layout_width="169dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/breidge_1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_jomalone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kanebo"
+                app:layout_constraintTop_toBottomOf="@+id/ElizabethArden" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </LinearLayout>
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
